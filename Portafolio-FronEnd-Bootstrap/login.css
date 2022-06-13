@@ -1,0 +1,20 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+ .Enter {
+    margin: 0;
+    min-height: 100vh;
+    background-image:  url("images/lenguaje-de-programacion.webp") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:  fixed;
+margin: 20px;
+ }
+ .fondo{
+    
+     background: black;
+     opacity: 75%;
+ }
+
