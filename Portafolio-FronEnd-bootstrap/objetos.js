@@ -13,13 +13,13 @@ function cerrarInformacion(){
 
 // mostrat interes
 
-function mostrar(){
-    document.getElementById('interes').style.display= 'block';
-}
+// function mostrar(){
+//     document.getElementById('interes').style.display= 'block';
+// }
 
-function cerrar(){
-    document.getElementById('interes').style.display = 'none';
-}
+// function cerrar(){
+//     document.getElementById('interes').style.display = 'none';
+// }
 
 
 // fecha de año

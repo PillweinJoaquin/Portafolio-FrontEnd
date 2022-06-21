@@ -10,21 +10,30 @@
       <link rel="stylesheet" href="Estilos.CSS">
     </head>
 <body > 
-    <!-- Menu. -->
+
+    <!-- MENU -->
+
       <nav class="navbar navbar-expand-lg navbar-light bg-light bg-opacity-50 ">
+          <!-- BOTON LOGIN -->
     <div class="container-fluid" class="Logo" >
-      <!--Logo-->
+      <div class="login">
+        <a class="login btn btn-secondary"   href="Login.html" > Login</a>  
+          </div>  
+  
+      <!--LogoS-->
       <a href="https://www.instagram.com/pillweiin/" target="_blank"><img src="images/logo instagram.jpg" alt="Logos"  class="Logo" ></a>
       <a href="https://twitter.com/pillwein09" target="_blank"> <img src="images/twitter logo.png"  class="Logo" ></a>
       <a href="https://github.com/PillweinJoaquin" target="_blank"> <img src="images/logo de github.png" class="Logo" ></a>
-        <div class=" nav-item ">
-      <a class="navbar-brand btn btn-outline-primary" href="Untitled-1.html">Inicio</a>
+      
+      <div class=" nav-item navbar-nav me-auto mb-2 mb-lg-0 ">
+        <li class="nav-item btn btn-outline-primary">
+        <a class="nav-link active" aria-current="page"   href="index.html">Inicio</a>
+      </li>  
       </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse  navbar-nav me-auto mb-2 mb-lg-0"    id="navbarSupportedContent">
           <li class="nav-item btn btn-outline-primary">
             <a class="nav-link active" aria-current="page"   href="#educacion">Educacion</a>
           </li>
@@ -35,59 +44,64 @@
                 <a class="nav-link " href="#progress">Hard Skills & Solft Skills</a>
                </li>
               <li class="nav-item dropdown btn btn-outline-primary" >
-            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Mas  </a>
+            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tengo interes en</a>
       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
         <li >
-            <a class="dropdown-item" href="#" onclick="mostrar()" >Tengo interes en </a>
+            <a class="dropdown-item" href="#">Tecnologias</a>
+            <a class="dropdown-item" href="#" >Hardward</a>
+            <a class="dropdown-item" href="#" >Desarrollo</a>
+            <a class="dropdown-item" href="#" onclick="mostrar()" > BackEnd</a>
                 </li>
             </ul>
           </li>
       </div>
     </div>
+    <div >
   </nav>
-<nav id="interes" >
+
+        <!--INTERES(JS) -->
+<!-- <nav id="interes" >
   <div >
     <ul>
- 
-       <li class="listas"> 
-        <strong>Conseguir Trabajo</strong> 
-        <p>Estoy en busca de mi primer trabajo profesional en el mundo de IT</p>
+      
+       <li class="listas"> <a href=""><strong>Tecnologias</strong> </a>
+        
       </li>
-      <li  class="listas"> 
-        <strong> Prestar Servicios</strong>
-        <p>servicios que puedo llegar a aportar</p>
+      <li  class="listas"> <a href=""><strong> Hardward</strong></a>
+
       </li>
+      <li class="listas"> <a href=""> <strong>Desarrollo</strong> </a>
+  
+      </li>
+      <li  class="listas">  <a href=""> <strong> backEnd</strong></a>
+      
+      </li>
+    
     </ul>
     </div>
-  </nav>
-<div>
-<a class="login btn btn-secondary"   href="Login.html" > Login</a>  
-  </div>  
-  <br><br><br>
-     <!--foto de perfil-->
-  <nav onclick="cerrar()">
-     <!--Boton de  editar-->
+  </nav> -->
+
+ 
+     <!--FOTO DE PERFIL-->
+
+  <nav id="fotodeperfil"  onclick="cerrar()">
     <div class="edit">
       <a data-control-name="self_edit_contact_info" href=""  class="ember-view pv-contact-info-section__edit-action pv-profile-section__edit-action artdeco-button artdeco-button--tertiary artdeco-button--circle artdeco-button--muted">
-        <li-icon type="pencil-icon" role="img" aria-label="Editar información de contacto"><svg    fill="currentColor">
+        <li-icon type="pencil-icon" role="img" aria-label="Editar información de contacto"><svg    fill="currentColor" width="24" height="24" >
         <path d="M21.13 2.86a3 3 0 00-4.17 0l-13 13L2 22l6.19-2L21.13 7a3 3 0 000-4.16zM6.77 18.57l-1.35-1.34L16.64 6 18 7.35z"></path>
         </svg></li-icon>
         </a>
+        <a href="#">🗑️</a>
     </div>
-    <div class="container  text-sm-center">  
       <img class="position " src="images/WhatsApp Image 2022-05-22 at 9.20.49 PM.jpeg"  alt=""  class="img-fluid" height="200px" width="200px"> 
-        <div>
           <h1 class="tituloN">Joaquin Pillwein</h1>
-        <h6>Buenos Aires(Argenitina)</h6>
         <H6> Soy un Full Stack Developer Junior y tengo mucha ambicion por el mundo de IT</H6>
-        <div>
-        <button class ="btn btn-outline-primary"  onclick="mostrarInformacion()" > <h6>Informacion de contacto </h6></button>
-            </div>
-               </div>
-          </nav>
+        <h6>Buenos Aires(Argenitina) <button class ="btn btn-outline-primary"  onclick="mostrarInformacion()" > <h6>Informacion de contacto </h6></button></h6>
+        
 
-           <!--BOTON DE LOGIN--> 
-          <div id="desaparecer">
+           <!--BOTON DE INFORMACION (JS)--> 
+
+       <div id="desaparecer">
             <div data-test-modal="" role="dialog" tabindex="-1" class="caja" class="artdeco-modal artdeco-modal--layer-default " size="medium" aria-labelledby="pv-contact-info">
              
               <div class="negacion" onclick="cerrarInformacion()">
@@ -102,16 +116,8 @@
             Joaquin Pillwein
           </h1>
           </div>
-          <div class="caja2">
-              <a data-control-name="self_edit_contact_info" href=""  class="cajaDos" class="ember-view pv-contact-info-section__edit-action pv-profile-section__edit-action artdeco-button artdeco-button--tertiary artdeco-button--circle artdeco-button--muted">
-                  <li-icon type="pencil-icon" role="img" aria-label="Editar información de contacto"><svg    fill="currentColor" width="24" height="24" >
-                  <path d="M21.13 2.86a3 3 0 00-4.17 0l-13 13L2 22l6.19-2L21.13 7a3 3 0 000-4.16zM6.77 18.57l-1.35-1.34L16.64 6 18 7.35z"></path>
-                  </svg></li-icon>
-                  </a>
-              </div>
-          <div>
-          <h2 class="text-body-large-open mb4">Información de contacto</h2></div>
-          <!-- Mi Perfil -->
+      
+
           <section class="pv-contact-info__contact-type ci-vanity-url">
               <div id="ember86" class="ember-view">
           
@@ -190,15 +196,12 @@
               </span>
             </div>
           </section>
-          
-          </div>
-          </div>
+               </div>
+      </div>
+</nav>
 
 
-          <br>
-         <br>
-      <br>
-<section>
+<!-- <section>
     <h2 class="tecnolo">Tecnologias </h2> 
   <br>
   <br>
@@ -223,18 +226,11 @@
   <div class="tecnologias">
     <img src="images/java logo.png" class="tecno" alt="logojava">
   </div>
-</section>
-          <br>
-            <br>
-               <br>
-             <br>
-           <br>
-        <br>
-     <br>
-   <br>
-<br>
+</section> -->
+
+
 <!-- Hard Skills & Solft  Skills  -->
-   <section  id="progress" class="Progreso bg-white bg-opacity-50">
+   <section  id="progreso" class="bg-white bg-opacity-50">
     <div>
       <div class="edit">
         <a data-control-name="self_edit_contact_info" href=""  class="ember-view pv-contact-info-section__edit-action pv-profile-section__edit-action artdeco-button artdeco-button--tertiary artdeco-button--circle artdeco-button--muted">
@@ -242,30 +238,27 @@
           <path d="M21.13 2.86a3 3 0 00-4.17 0l-13 13L2 22l6.19-2L21.13 7a3 3 0 000-4.16zM6.77 18.57l-1.35-1.34L16.64 6 18 7.35z"></path>
           </svg></li-icon>
           </a>
+          <a href="#">🗑️</a>
       </div>
-    <h2> Hard Skills & Solft  Skills </h2>
-    <h4>Diseño</h4>
+    <h2 > Hard Skills & Solft  Skills </h2>
+    <h4 class="progreso1">Diseño</h4>
         <div class="progress">
           <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25% </div></div>
-      <h4>Trabajo en equipo</h4>
+      <h4 class="progreso1">Trabajo en equipo</h4>
    <div class="progress">
      <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%
        </div>
          </div>
-         <h4>Resolucion de problemas</h4>
+         <h4 class="progreso1">Resolucion de problemas</h4>
            <div class="progress">
            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%
        </div>
     </div>
-       <br>
-          <br>
-         <br>
-    <br>
     </div>
     </section>
-
+  
 <!-- Educacaion -->
-    <section id="educacion" class="Primera1 bg-white bg-opacity-50">
+    <section id="educacion" class=" bg-white bg-opacity-50">
        <div>
         <div class="edit">
           <a data-control-name="self_edit_contact_info" href=""  class="ember-view pv-contact-info-section__edit-action pv-profile-section__edit-action artdeco-button artdeco-button--tertiary artdeco-button--circle artdeco-button--muted">
@@ -273,31 +266,31 @@
             <path d="M21.13 2.86a3 3 0 00-4.17 0l-13 13L2 22l6.19-2L21.13 7a3 3 0 000-4.16zM6.77 18.57l-1.35-1.34L16.64 6 18 7.35z"></path>
             </svg></li-icon>
             </a>
+            <a href="#">🗑️</a>
         </div>
-        <h2> <img src="images/secundaria17.png" alt=""> Educacion</h2>
-            <h4>  Escuela Secundaria 17</h>
-             <p>Bachiler en Profesorado en E.F</p>
+        <div>
+        <h2>Educacion</h2>
+        <div class="educacion1">
+            <h4>  <img src="images/secundaria17.png"  class="logoeducacion" alt=""> Escuela Secundaria 17</h4>
+             <strong><p>Bachiler en Profesorado en E.F</p></strong>
            <p>2013-2019</p>
+        </div>
 
-    
+        <div  class="educacion1">
          <h4> <img src="images//argentina programa logo.png" class="Logo2" alt=""> Argentina Programa-Curso de Programacion</h4>
-           <p>Curso de Javascript</p>
-          <p>3 meses</p>
-  
-      
+           <strong><p>Curso de Javascript </p></strong>
+           <p>3 meses</p>
+       </div>
+       <div   class="educacion1">
              <h4> <img src="images/inti.jpg" class="logo3" alt=""> Instituto Nacional de la Tecnologia Industrial</h4>
-                 <p>Developer Full Stack</p>
+                <strong><p>Developer Full Stack</p></strong> 
                    <p>6 meses</p>
-                    <br>
-                    <br>
-                    <br>
-                 <br>
-             <br>
+          </div>
         </div>
         </section>
 
         <!-- Experiencia -->
-        <section  id="experiencia" class="Segunda2 bg-white bg-opacity-50">
+        <section  id="experiencia" class="bg-white bg-opacity-50">
           <div>
             <div class="edit">
               <a data-control-name="self_edit_contact_info" href=""  class="ember-view pv-contact-info-section__edit-action pv-profile-section__edit-action artdeco-button artdeco-button--tertiary artdeco-button--circle artdeco-button--muted">
@@ -305,33 +298,32 @@
                 <path d="M21.13 2.86a3 3 0 00-4.17 0l-13 13L2 22l6.19-2L21.13 7a3 3 0 000-4.16zM6.77 18.57l-1.35-1.34L16.64 6 18 7.35z"></path>
                 </svg></li-icon>
                 </a>
+                <a href="#">🗑️</a>
             </div>
         <h2>Experiencia</h2>
-            <p>Tengo conocimiento en diseño con html,  css,  Angular y Typescript. Tambien tengo conocimiento en SprinBoot, Base de Datos(MySQL) y un poco de Seguridad Web</p>
+            <h4 class="experiencia1">FontEnd Developer</h4>
+            <p  class="experiencia1"><strong>Microsoft</strong></p>
+            <p  class="experiencia1">2019-2022</p>
       </div>
     </section>
  
   <!-- Mis Proyectos -->
-    <section class="Tercera3 bg-white bg-opacity-50">
-      <div >
-        <div class="edit">
+    <section  id="proyectos" class="bg-white bg-opacity-50">
+      <div class="text-end">
           <a data-control-name="self_edit_contact_info" href=""  class="ember-view pv-contact-info-section__edit-action pv-profile-section__edit-action artdeco-button artdeco-button--tertiary artdeco-button--circle artdeco-button--muted">
             <li-icon type="pencil-icon" role="img" aria-label="Editar información de contacto"><svg    fill="currentColor" width="24" height="24" >
             <path d="M21.13 2.86a3 3 0 00-4.17 0l-13 13L2 22l6.19-2L21.13 7a3 3 0 000-4.16zM6.77 18.57l-1.35-1.34L16.64 6 18 7.35z"></path>
             </svg></li-icon>
             </a>
-        </div>
+            <a href="#">🗑️</a>
+          </div>
         <h2>Mis proyectos</h2>
+        <div class="proyectos1">
            <h4>Portafolio</h4>
               <p>Desarrollamos un Portafolio basado en  Diseño, Front End Angular  y creaciónes de las APIs necesarias(back end) con la tecnologia Spring Boot con seguridad JWT.</p>
              <h4>Veterinaria Cuki</h4>
                <p> <img src="images/veterinaria.jpg" class="logo4" alt=""> Desarrollamos un sitio web para una Veterinaria front-end y back-end basado en Boostrap, Typescript y  Angular.</p>
-              <br>
-            <br>
-           <br>
-         <br>  
-       <br>
-    </div>
+          </div>
   </section>
 
 <!-- Fondo (licence, marce, etc.)-->

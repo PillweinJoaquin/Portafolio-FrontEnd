@@ -27,6 +27,13 @@ div h2 img{
     width: 50px;
     height: 30px;
 }
+h2 {
+    margin: 0px 20px;
+}
+.navbar {
+    border-radius: 1%;
+    border: rgb(207, 207, 207) solid 1px;
+}
 .tituloN{
     text-align: center;
     color: rgb(24, 25, 26);
@@ -80,36 +87,6 @@ height: 40px;
 .nav-item {
     margin: 3px;
 }
-
-.Primera1{
-    text-align: center;
-    background: white;
-    height: 500px;
-    margin: 30px;
-}
-.Segunda2{
-    text-align: center;
-    padding: 10px;
-    margin: 30px;
-    background: white;
-    height: 200px;
-}
-.Tercera3{
-    text-align: center;
-    background:white;
-    padding: 30px;
-    margin: 30px;
-    height: 400px;
-    
-}
-.Progreso{
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
-    margin-bottom: 30px;
-    background: white;
-   
-}
 .Logo2{
     height: 40px;
     width: 80px;
@@ -133,9 +110,8 @@ height: 40px;
 }
 
 .login {
-    position: absolute;
-    margin: auto;
-    padding: auto;
+  margin-right: 20px;
+  float: left;
     height: 40px;
     width: 70px;
 }
@@ -147,6 +123,7 @@ height: 40px;
   margin: 300px;
 }
 .listas {
+    width:160px;
     margin-right: 20px;
     list-style: none;
     transition: 0.5s;
@@ -154,7 +131,7 @@ height: 40px;
 .listas:hover {
     background: gray;
 }
-/*Aca empieza informacion personal*/
+
 .mb-3.botonLoginGeneral{
     text-align: center;
     width: 100pc;
@@ -185,6 +162,62 @@ border: rgb(207, 207, 207) solid 1px;
 .cajaDos {
 text-align: end;
 }
+#fotodeperfil {
+    text-align: center;
+    margin: 10px;
+    padding-bottom: 500px;
+}
+.logoeducacion {
+    height: 40px;
+    width: 60px;
+}
+#progreso{
+    border: rgb(207, 207, 207) solid 1px;
+    border-radius: 1%;
+    margin: 10px 0px;
+    background: white;
+    height: 300px;
+}
+#progreso .progreso1 {
+  text-align: center;
+}
+#progreso .progress {
+    margin: 0px 100px;
+    min-width: 200px;
+}
+
+#educacion{
+    border: rgb(207, 207, 207) solid 1px;
+    border-radius: 1%;
+    background: white;
+    height: 520px;
+    margin: 10px 0px;
+}
+#educacion .educacion1 {
+margin-left: 100px;
+}
+#experiencia{
+    border: rgb(207, 207, 207) solid 1px;
+    border-radius: 1%;
+    
+    margin: 10px 0px;
+    background: white;
+    height: 200px;
+}
+#experiencia .experiencia1 {
+    margin-left:  100px;
+}
+#proyectos {
+    border: rgb(207, 207, 207) solid 1px;
+    border-radius: 1%;
+
+    background:white;
+    margin: 10px 0px;
+    height: 400px;
+}
+#proyectos .proyectos1 {
+    margin-left:  100px;
+}
 
 #titulo {
     border-bottom: darkblue solid 1px;    
@@ -204,7 +237,7 @@ display: none;
 #interes {  
  display: none;
 list-style: none;
-position: absolute; 
+position: relativa; 
 margin: 10px 700px;
 width: 200px;
 height: 207px;
