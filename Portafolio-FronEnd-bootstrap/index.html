@@ -18,7 +18,7 @@
     <div class="container-fluid" class="Logo" >
       <div class="login">
         <a class="login btn btn-secondary"   href="Login.html" > Login</a>  
-          </div>  
+      </div>  
   
       <!--LogoS-->
       <a href="https://www.instagram.com/pillweiin/" target="_blank"><img src="images/logo instagram.jpg" alt="Logos"  class="Logo" ></a>
@@ -41,13 +41,13 @@
           <a class="nav-link active  " aria-current="page" href="#experiencia">Experiencia</a>
              </li>  
                   <li class="nav-item btn btn-outline-primary" class="button">
-                <a class="nav-link " href="#progress">Hard Skills & Solft Skills</a>
+                <a class="nav-link " href="#progreso">Hard Skills & Solft Skills</a>
                </li>
               <li class="nav-item dropdown btn btn-outline-primary" >
-            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tengo interes en</a>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tengo interes en</a>
       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
         <li >
-            <a class="dropdown-item" href="#">Tecnologias</a>
+            <a class="dropdown-item" href="#"  onclick="mostrarContainer()">Tecnologias</a>
             <a class="dropdown-item" href="#" >Hardward</a>
             <a class="dropdown-item" href="#" >Desarrollo</a>
             <a class="dropdown-item" href="#" onclick="mostrar()" > BackEnd</a>
@@ -59,11 +59,45 @@
     <div >
   </nav>
 
+  <section  id="container">
+    <div>
+      <button type="button" class="btn-close" onclick="cerrarContainer()" aria-label="Close"></button>
+      <strong><h6 class="tecnolo">Tecnologias  </h6> 
+    <div class="tecnologias">
+      <img src="images/logo de html.png" class="tecno" alt="logoHTM">
+    </div>
+    <div class="tecnologias">
+      <img src="images/logo de css.png" class="tecno" alt="logoCSS">
+    </div>
+    <div class="tecnologias">
+      <img src="images/javascript-logo.webp" class="tecno " alt="logoJS">
+    </div>
+    <div class="tecnologias">
+      <img src="images/Bootstrap_logo.svg.png" class="tecno" alt="logobotstrap">
+    </div>
+    <div class="tecnologias">
+      <img src="images/logo angular" class="tecno" alt="logoangular">
+    </div>
+    <div class="tecnologias">
+      <img src="images/base de datos.png" class="tecno" alt="logobd">
+    </div>
+    <div class="tecnologias">
+      <img src="images/java logo.png" class="tecno" alt="logojava">
+    </div>
+    </div>
+  </section>
+
+  <div>
+    <a href="#progreso" class="arrow-container">
+      <div class="arrow"></div>
+      <div class="arrow"></div>
+      <div class="arrow"></div>  
+    </a>
+    </div>
         <!--INTERES(JS) -->
 <!-- <nav id="interes" >
   <div >
     <ul>
-      
        <li class="listas"> <a href=""><strong>Tecnologias</strong> </a>
         
       </li>
@@ -85,9 +119,9 @@
      <!--FOTO DE PERFIL-->
 
   <nav id="fotodeperfil"  onclick="cerrar()">
-    <div class="edit">
+    <div  class="edit"  onclick="cambiarParrafo()" >
       <a data-control-name="self_edit_contact_info" href=""  class="ember-view pv-contact-info-section__edit-action pv-profile-section__edit-action artdeco-button artdeco-button--tertiary artdeco-button--circle artdeco-button--muted">
-        <li-icon type="pencil-icon" role="img" aria-label="Editar información de contacto"><svg    fill="currentColor" width="24" height="24" >
+        <li-icon type="pencil-icon" role="img" aria-label="Editar información de contacto"  ><svg    fill="currentColor" width="24" height="24" >
         <path d="M21.13 2.86a3 3 0 00-4.17 0l-13 13L2 22l6.19-2L21.13 7a3 3 0 000-4.16zM6.77 18.57l-1.35-1.34L16.64 6 18 7.35z"></path>
         </svg></li-icon>
         </a>
@@ -95,12 +129,16 @@
     </div>
       <img class="position " src="images/WhatsApp Image 2022-05-22 at 9.20.49 PM.jpeg"  alt=""  class="img-fluid" height="200px" width="200px"> 
           <h1 class="tituloN">Joaquin Pillwein</h1>
-        <H6> Soy un Full Stack Developer Junior y tengo mucha ambicion por el mundo de IT</H6>
-        <h6>Buenos Aires(Argenitina) <button class ="btn btn-outline-primary"  onclick="mostrarInformacion()" > <h6>Informacion de contacto </h6></button></h6>
+          <div>
+        <p  id="ocultarTexto" > Soy un Full Stack Developer Junior y tengo mucha ambicion por el mundo de IT</p>
+        </div>
+        <div>
+          <input   id="edit-input" type="text">
+        </div>
+        <h6>Buenos Aires(Argentina) <button class ="btn btn-outline-primary"  onclick="mostrarInformacion()" > <h6>Informacion de contacto </h6></button></h6>
         
 
            <!--BOTON DE INFORMACION (JS)--> 
-
        <div id="desaparecer">
             <div data-test-modal="" role="dialog" tabindex="-1" class="caja" class="artdeco-modal artdeco-modal--layer-default " size="medium" aria-labelledby="pv-contact-info">
              
@@ -116,7 +154,6 @@
             Joaquin Pillwein
           </h1>
           </div>
-      
 
           <section class="pv-contact-info__contact-type ci-vanity-url">
               <div id="ember86" class="ember-view">
@@ -201,34 +238,6 @@
 </nav>
 
 
-<!-- <section>
-    <h2 class="tecnolo">Tecnologias </h2> 
-  <br>
-  <br>
-  <div class="tecnologias">
-    <img src="images/logo de html.png" class="tecno" alt="logoHTM">
-  </div>
-  <div class="tecnologias">
-    <img src="images/logo de css.png" class="tecno" alt="logoCSS">
-  </div>
-  <div class="tecnologias">
-    <img src="images/javascript-logo.webp" class="tecno " alt="logoJS">
-  </div>
-  <div class="tecnologias">
-    <img src="images/Bootstrap_logo.svg.png" class="tecno" alt="logobotstrap">
-  </div>
-  <div class="tecnologias">
-    <img src="images/logo angular" class="tecno" alt="logoangular">
-  </div>
-  <div class="tecnologias">
-    <img src="images/base de datos.png" class="tecno" alt="logobd">
-  </div>
-  <div class="tecnologias">
-    <img src="images/java logo.png" class="tecno" alt="logojava">
-  </div>
-</section> -->
-
-
 <!-- Hard Skills & Solft  Skills  -->
    <section  id="progreso" class="bg-white bg-opacity-50">
     <div>
@@ -302,8 +311,12 @@
             </div>
         <h2>Experiencia</h2>
             <h4 class="experiencia1">FontEnd Developer</h4>
-            <p  class="experiencia1"><strong>Microsoft</strong></p>
+            <p  class="experiencia1"><strong>Microsoft-FullTime</strong></p>
             <p  class="experiencia1">2019-2022</p>
+            <p class="experiencia1">
+               Excelente empresa para trabajar, desarrollarse y construir tu propia carrera. Se cuida mucho a la gente y pagan promedio 66% percentil de posiciones comparables en el mercado.
+               El grupo de profesionales y equipo de liderazgo es constructivo y el ambiente de trabajo dinámico y colaborativo.
+              </p>
       </div>
     </section>
  
@@ -327,14 +340,14 @@
   </section>
 
 <!-- Fondo (licence, marce, etc.)-->
-<footer class="fondo ae-container-fluid  bg-black bg-opacity-50">
-  <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-left">
-      <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right">
-        <p class="rk-footer__text rk-footer__contact "> <span class="ae-u-bold">Email: </span><span class="ae-u-bolder"> <a href="#0" class="rk-dark-color ">pillweinjoaquin@gmail.com </a></span></p>
-        <p class="rk-footer__text rk-footer__by">Theme by <a href="https://getbootstrap.com/" class="ae-u-bolder">Bootstrap.</a></p>
-        <p class="rk-footer__text rk-footer__copy ">©<span class="ae-u-bold" id="anio"> </span><span class="ae-u-bolder" > JOAQUIN PILLWEIN PORTFOLIO </span>derechos de autor.</p>
+<footer class="fondo">
+  
+      <div>
+        <p> <span >Email: </span><span> <a href="#0">pillweinjoaquin@gmail.com </a></span></p>
+        <p>Theme by <a href="https://getbootstrap.com/" >Bootstrap.</a></p>
+        <p>©<span  id="anio"> </span><span> JOAQUIN PILLWEIN PORTFOLIO </span>derechos de autor.</p>
       </div>
-    </div>
+  
 </footer> 
 <script src="objetos.js"></script>
  <script src="bootstrap.min.js"></script>
